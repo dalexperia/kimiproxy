@@ -133,7 +133,7 @@ export async function createKimiStream(
       'x-traffic-id': headers['x-traffic-id'],
       'r-timezone': headers['r-timezone']
     },
-    body: framedPayload as any
+    body: framedPayload
   });
 
   if (!response.ok || !response.body) {
